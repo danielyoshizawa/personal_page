@@ -6,3 +6,32 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* TODO : DANIEL : Add SCSS to this project */
+
+li {
+  list-style: none;
+}
+
+.container {
+  /* Lefting borders for debug purpose */
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  flex-warp: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  /* Lefting borders for debug purpose */
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.navbar a {
+  padding: 10px;
+}
