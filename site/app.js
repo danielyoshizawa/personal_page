@@ -1,8 +1,9 @@
-var express = require('express');
-var path = require('path');
+var express      = require('express');
+var path         = require('path');
 var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var { engine } = require('express-handlebars');
+var logger       = require('morgan');
+var { engine }   = require('express-handlebars');
+var reload       = require('reload');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -23,5 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/about', aboutRouter);
+
+reload(app);
 
 module.exports = app;
