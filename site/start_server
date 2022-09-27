@@ -2,4 +2,4 @@
 
 echo "Starting Express Server"
 
-DEBUG=site:* npm start
+DEBUG=site:* nodemon start
