@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/danielyoshizawa/personal_page#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "reload": "^3.2.0"
   }
 }
