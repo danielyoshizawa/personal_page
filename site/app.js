@@ -11,6 +11,7 @@ var aboutRouter          = require('./routes/about');
 var articlesRouter       = require('./routes/articles');
 var codeChallengesRouter = require('./routes/code_challenges');
 var experienceRouter     = require('./routes/experience');
+var errorRouter          = require('./routes/error');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/about', aboutRouter);
 app.use('/articles', articlesRouter);
 app.use('/code_challenges', codeChallengesRouter);
 app.use('/experience', experienceRouter);
+app.use('*', errorRouter);
 
 reload(app);
 
