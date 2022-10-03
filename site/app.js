@@ -35,6 +35,10 @@ app.use('/experience', experienceRouter);
 app.use('/projects', projectsRouter);
 app.use('*', errorRouter);
 
-reload(app);
+reload(app).then(function (reloadReturned) {
+  console.log("Reload Working");
+}).catch(function (err) {
+  console.log("Reload Error : " + err);
+});
 
 module.exports = app;
