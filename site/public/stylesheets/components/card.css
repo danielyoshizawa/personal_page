@@ -1,0 +1,16 @@
+.component.card {
+  border: 1px solid red;
+}
+
+.component.card .tags ul{
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.component.card .tags ul li{
+  padding: 5px;
+  border: 1px solid black;
+}
