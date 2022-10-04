@@ -1,0 +1,24 @@
+.container {
+  border: 1px solid red;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Creating a generic grid */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .column { flex: 1; }
+  ._25 { flex: 2.5; }
+  ._55 { flex: 5.5; }
+  ._20 { flex: 2.0; }
+}
