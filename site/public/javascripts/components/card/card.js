@@ -5,7 +5,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div className="component card">
+      <div className="component card" onClick={this.props.onClick}>
         <h2 className="title">{this.props.title}</h2>
         <p className="description">{this.props.description}</p>
         <div className="tags">

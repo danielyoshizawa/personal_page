@@ -1,4 +1,5 @@
-.container {
+/* Only for debug purpose */
+.grid.container {
   border: 1px solid red;
   max-width: 1200px;
   margin: 0 auto;
