@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e js,css,html,handlebars --ignore public/javascripts/compiled --exec './compile.sh && node ./bin/www'"
+    "start": "nodemon -e js,css,html,handlebars,json --ignore public/javascripts/compiled --exec './compile.sh && node ./bin/www'"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
